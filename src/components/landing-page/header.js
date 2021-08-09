@@ -13,7 +13,7 @@ function Header() {
             <div className="HeaderContainer">
 
                 <div className="LogoContainer">
-                    <img className="BigLogo" src={BigLogo} />
+                    <img className="BigLogo" src={BigLogo} alt="Majs&Lenny Logo in a serif font" />
                     <div className="LogoText"><p>A two woman book club that<br />
                         reads (almost) anything<br />
                         and likes good drinks</p>
@@ -22,7 +22,7 @@ function Header() {
 
                 <div className="BookContainer">
                     <div id="HeaderRectangle">
-                        <img className="HeaderBook" src={BookTemplate} />
+                        <img className="HeaderBook" src={BookTemplate} alt="The book we're reading this month" />
                     </div>
                     <p>This months read</p>
                 </div>

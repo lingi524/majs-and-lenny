@@ -14,7 +14,7 @@ More learnings TBA!
   
 <h1>💻 Tech stack</h1>
 React<br>
-React Routere<br>
+React Router<br>
 CSS<br>
 Contentful<br>
 Netlify<br>
