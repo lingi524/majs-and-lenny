@@ -1,5 +1,6 @@
 import React from "react";
 import BookBox from "../global-component/bookBox";
+import Button from "../global-component/button";
 
 function LatestReads() {
 
@@ -12,6 +13,7 @@ function LatestReads() {
             <BookBox />
             <BookBox />
             </div>
+            <Button />
         </div>
     )
 }
