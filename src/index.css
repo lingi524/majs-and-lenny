@@ -4,8 +4,26 @@
 }
 
 body {
-  background-color: #fbf7e9;
+  background-color: #fffef8;
   color: #433b3b;
+}
+
+a {
+  text-decoration: underline;
+  color: #433b3b;
+}
+
+a:hover {
+  color: rgb(216, 87, 87);
+}
+
+h1 {
+  font-family: ivypresto-display, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
 }
 
 h2 {
@@ -16,6 +34,15 @@ h2 {
   line-height: 23px;
   margin: 30px 0 40px 50px;
 }
+
+/* p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: justify;
+} */
 
 .Button {
   display: flex;
@@ -138,6 +165,8 @@ button {
 /*End of header styling*/
 
 /*Main Content Landing page styling*/
+
+/*Latest reads styling*/
 .BookBoxContainer {
   display: flex;
   flex-direction: row;
@@ -171,8 +200,25 @@ button {
   width: 98px;
   height: 151px;
   z-index: 2;
-  margin-top: -85px;
+  margin-top: -100px;
 }
+/*End of latest reads styling*/
+
+/*About section styling*/
+.About {
+  background-color: #fbf7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.AboutImage {
+  width: 260px;
+  height: 300px;
+}
+
 /*Footer styling*/
 
 .Footer {
@@ -196,7 +242,7 @@ button {
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* For tablets: */
   body {
-    background-color: yellow;
+    background-color: rgb(255, 255, 155);
   }
 
   .HeaderContainer {
@@ -210,6 +256,6 @@ button {
   /* For desktop: */
   /* Set a max width for this later, to make it center on really large screens*/
   body {
-    background-color: red;
+    background-color: rgb(255, 184, 184);
   }
 }
