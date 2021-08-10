@@ -6,10 +6,10 @@ function Menu() {
     return (
         <div className="Menu">
             <img src={LogoSmall} alt="Majs & Lenny logo small" />
-            <a>HOME</a>
-            <a>READS</a>
-            <a>TBR</a>
-            <a>ABOUT</a>
+            <p>HOME</p>
+            <p>READS</p>
+            <p>TBR</p>
+            <p>ABOUT</p>
         </div>
     )
 }

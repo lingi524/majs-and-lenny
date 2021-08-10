@@ -4,14 +4,22 @@
 }
 
 body {
-  background-color: #FBF7E9;
-  color: #433B3B;
+  background-color: #fbf7e9;
+  color: #433b3b;
+}
+
+h2 {
+  font-family: ivypresto-display, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 /*Header component styling*/
 
 .Menu {
-  background-color: #ECC643;
+  background-color: #ecc643;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -30,8 +38,8 @@ body {
 }
 
 .Header {
-  background-color: #ECC643;
-  font-family: ivypresto-display,serif;
+  background-color: #ecc643;
+  font-family: ivypresto-display, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 12px;
@@ -49,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .HeaderBook {
@@ -64,7 +72,7 @@ body {
 #HeaderRectangle {
   width: 183.6px;
   height: 270.82px;
-  background: #FFFEF8;
+  background: #fffef8;
   z-index: 1;
   position: relative;
   margin: 10px 0 10px 0;
@@ -82,6 +90,35 @@ body {
 
 /*End of header styling*/
 
+/*Main Content Landing page styling*/
+.BookBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.BookBox {
+  text-align: center;
+  margin: 20px;
+}
+
+.BookBoxRectangle {
+  width: 123px;
+  height: 156px;
+  background: #f7eed1;
+  border-radius: 15px;
+  margin: 50px 0 50px 0;
+}
+
+.BookBoxBookCover {
+  width: 98px;
+  height: 151px;
+  z-index: 2;
+  margin-top: -60px;
+}
 /*Footer styling*/
 
 .Footer {
@@ -91,8 +128,8 @@ body {
   font-size: 10px;
   line-height: 16px;
   text-align: center;
-  background-color: #ECC643;
-  width:100%;
+  background-color: #ecc643;
+  width: 100%;
   padding: 50px 0 50px 0;
 }
 
@@ -100,8 +137,9 @@ body {
   font-weight: bold;
 }
 
+/*End of footer styling*/
 
-@media only screen and (min-width: 600px) and (max-width: 768px){
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   /* For tablets: */
   body {
     background-color: yellow;
@@ -110,9 +148,8 @@ body {
   .HeaderContainer {
     flex-direction: row;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
   }
-
 }
 
 @media only screen and (min-width: 769px) {
@@ -121,5 +158,4 @@ body {
   body {
     background-color: red;
   }
-
 }

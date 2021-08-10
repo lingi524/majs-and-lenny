@@ -1,10 +1,13 @@
 import React from "react";
+import LatestReads from "./latestReads";
 
 function MainContent() {
 
     return (
         <div className="MainContent">
-            <p>Test</p>
+            <LatestReads />
+            {/* <About />
+            <OnTheTBR /> */}
         </div>
     )
 }
