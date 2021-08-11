@@ -5,7 +5,7 @@ function Menu() {
 
     return (
         <div className="Menu">
-            <img src={LogoSmall} alt="Majs & Lenny logo small" />
+            {/* <img src={LogoSmall} alt="Majs & Lenny logo small" /> */}
             <p>HOME</p>
             <p>READS</p>
             <p>TBR</p>

@@ -1,6 +1,7 @@
 import React from "react";
 import LatestReads from "./latestReads";
 import About from "./about";
+import OnTheTBR from "./onTheTBR";
 
 function MainContent() {
 
@@ -8,7 +9,7 @@ function MainContent() {
         <div className="MainContent">
             <LatestReads />
             <About />
-            {/* <OnTheTBR /> */}
+            <OnTheTBR /> 
         </div>
     )
 }

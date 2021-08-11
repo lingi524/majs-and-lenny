@@ -1,4 +1,4 @@
-A website for my two women book club using create-react-app, Contentful and Netlify. This is my personal project for my last term at the Frontend Developer program at Hyper Island.
+A website for my two women book club using React, Contentful and Netlify (that's the plan anyway). This is my personal project for my last term at the Frontend Developer program at Hyper Island. The book club has used an excel document to document our reads until now, and I thought it was time for an update to our "database".
 
 <h1>🏁 Goals:</h1>
  Make a website with a headless CMS attached<br>
@@ -20,3 +20,7 @@ Contentful<br>
 Netlify<br>
 Adobe Illustrator<br>
 Figma<br>
+
+<h1>🏗️ Improvements</h1>
+Use a CSS library (I love vanilla CSS, but it's time to get with the times)<br>
+More improvemnts TBA!
