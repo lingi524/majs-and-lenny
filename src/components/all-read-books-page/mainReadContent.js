@@ -7,9 +7,6 @@ function MainReadContent() {
 
     return (
         <div className="MainReadContent">
-            <div className="AllReads">
-            
-            
             <h1>Our latest reads</h1>
             <div className="BookBoxContainer">
             <BookBox />
@@ -25,7 +22,6 @@ function MainReadContent() {
             <BookBox />
             <BookBox />
             </div>
-        </div>
         </div>
     )
 }
