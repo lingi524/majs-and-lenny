@@ -5,7 +5,7 @@ function AllReadBooksPage() {
 
     return (
         <div className="AllReadBooksPage">
-            <p>Test</p>
+            <h1>Test</h1>
         </div>
     )
 }
