@@ -1,6 +1,7 @@
 import './App.css';
 import AllReadBooksPage from './components/all-read-books-page/allReadBooksPage';
 import LandingPage from './components/landing-page/landingPage';
+import AllTBRBooksPage from './components/all-TBR-books-page/allTBRBooksPage';
 
 import {
   BrowserRouter as Router,
@@ -24,8 +25,11 @@ export default function App() {
           <Route exact path="/">
             <LandingPage />
           </Route>
-          <Route path="/test">
+          <Route path="/allreadbooks">
             <AllReadBooksPage />
+          </Route>
+          <Route path="/alltbrbooks">
+            <AllTBRBooksPage />
           </Route>
         </Switch>
       </div>
