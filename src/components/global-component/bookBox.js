@@ -15,7 +15,7 @@ function BookBox() {
 
                 <p className="BookTitle">The Haunting of Hill House</p>
                 <p className="BookAuthor">Shirley Jackson</p>
-                <p className="BookTitle">{character}{rating}</p>
+                <p className="Rating"><span className="Star">{character}</span>{rating}</p>
                 </div>
             </div>
         </div>

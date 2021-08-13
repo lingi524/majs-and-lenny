@@ -83,6 +83,19 @@ button {
   margin: 5px 0 5px 0;
 }
 
+.Rating {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 22px;
+  margin: 3px 0 5px 0;
+}
+
+.Star {
+  margin: 0 5px 0 0;
+}
+
 .BookAuthor {
   font-family: Avenir;
   font-style: normal;
@@ -181,11 +194,11 @@ button {
 .BookBox {
   text-align: center;
   /* margin: 20px 20px 0 20px; */
-  padding: 20px;
+  padding: 15px;
 }
 
 .BookBoxRectangle {
-  width: 123px;
+  width: 130px;
   height: 156px;
   background: #f7eed1;
   border-radius: 15px;
