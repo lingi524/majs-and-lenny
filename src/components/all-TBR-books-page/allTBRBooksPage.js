@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
+import MainTBRContent from "./mainTBRContent";
 
 
 function AllTBRBooksPage() {
@@ -8,7 +9,7 @@ function AllTBRBooksPage() {
     return (
         <div className="AllTBRBooksPage">
             <Menu />
-            <h1>Test2</h1>
+            <MainTBRContent />
             <Footer />
         </div>
     )
