@@ -3,6 +3,7 @@ import AllReadBooksPage from './components/all-read-books-page/allReadBooksPage'
 import LandingPage from './components/landing-page/landingPage';
 import AllTBRBooksPage from './components/all-TBR-books-page/allTBRBooksPage';
 import ReviewPage from './components/read-book-page/reviewPage';
+import Error from './components/global-component/error';
 
 import {
   BrowserRouter as Router,
@@ -32,9 +33,11 @@ export default function App() {
           <Route path="/alltbrbooks">
             <AllTBRBooksPage />
           </Route>
-          <Route path="/reviewPage">
+          <Route path="/reviewPage"> 
+          {/* Add ":slug" in the path later to make the routing go to specifc page */}
             <ReviewPage />
           </Route>
+          <Route component={Error} />
         </Switch>
       </div>
     </Router>

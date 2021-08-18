@@ -361,6 +361,23 @@ button {
   margin: 30px 0 60px 0;
 }
 
+.ErrorContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Error h1 {
+  margin: 30px 60px 15px 60px;
+}
+
+.Error img {
+  width: 80%;
+  height: 80%;
+  margin: 15px 0 30px 0;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* For tablets: */
   body {
