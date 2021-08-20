@@ -13,7 +13,7 @@ function Error() {
             
             <div className="ErrorContent">
             <h1>404. <br /> Whoops! Nothing to see here</h1>
-            <img src={ErrorPic} alt="Picture of Linnéa in a red suit holding a fire alarm sign" />
+            <img src={ErrorPic} alt="Linnéa in a red suit holding a fire alarm sign" />
             </div>
             <Footer />
         </div>

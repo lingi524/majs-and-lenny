@@ -9,41 +9,50 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
+  // Link,
+  // useRouteMatch,
+  // useParams
 } from "react-router-dom";
+import React from 'react';
+import { client } from './client';
 
-export default function App() {
-  return (
-    // <div className="App">
-    //   <LandingPage /> 
-    //   <AllReadBooksPage />
-    // </div>
+// export default function App() {
+  class App extends React.Component {
 
-<Router>
-      <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <LandingPage />
-          </Route>
-          <Route path="/allreadbooks">
-            <AllReadBooksPage />
-          </Route>
-          <Route path="/alltbrbooks">
-            <AllTBRBooksPage />
-          </Route>
-          <Route path="/reviewPage"> 
-          {/* Add ":slug" in the path later to make the routing go to specifc page */}
-            <ReviewPage />
-          </Route>
-          <Route component={Error} />
-        </Switch>
-      </div>
-    </Router>
-  );
+  componentDidMount () {
+    client.getEntries ()
+      .then((response) => {
+        console.log(response);
+      })
+      .catch(console.error)
+  }
+
+  render () {
+    return (
+      <Router>
+            <div className="App">
+              <Switch>
+                <Route exact path="/">
+                  <LandingPage />
+                </Route>
+                <Route path="/allreadbooks">
+                  <AllReadBooksPage />
+                </Route>
+                <Route path="/alltbrbooks">
+                  <AllTBRBooksPage />
+                </Route>
+                <Route path="/reviewPage"> 
+                {/* Add ":slug" in the path later to make the routing go to specifc page */}
+                  <ReviewPage />
+                </Route>
+                <Route component={Error} />
+              </Switch>
+            </div>
+          </Router>
+        );
+  }
 }
 
 
 
-// export default App;
+export default App;
