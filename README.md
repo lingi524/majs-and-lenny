@@ -17,10 +17,12 @@ React<br>
 React Router<br>
 CSS<br>
 Contentful<br>
+GraphQL<br>
 Netlify<br>
 Adobe Illustrator<br>
 Figma<br>
 
 <h1>🏗️ Improvements</h1>
 Use a CSS library (I love vanilla CSS, but it's time to get with the times)<br>
+Hide API keys with environmental variables<br>
 More improvemnts TBA!
