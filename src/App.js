@@ -4,6 +4,7 @@ import LandingPage from './components/landing-page/landingPage';
 import AllTBRBooksPage from './components/all-TBR-books-page/allTBRBooksPage';
 import ReviewPage from './components/read-book-page/reviewPage';
 import Error from './components/global-component/error';
+import Posts from './components/posts';
 
 import {
   BrowserRouter as Router,
@@ -14,10 +15,29 @@ import {
   // useParams
 } from "react-router-dom";
 import React from 'react';
+import {useState, useEffect} from "react";
 import { client } from './client';
 
+
+const query = `
+{
+  booksCollection {
+    items {
+      title,
+      author,
+      grade,
+      slug,
+      read,
+      currentlyReading
+      
+    }
+  }
+}
+`;
 // export default function App() {
-  class App extends React.Component {
+
+
+class App extends React.Component {
 
   componentDidMount () {
     client.getEntries ()
@@ -26,6 +46,9 @@ import { client } from './client';
       })
       .catch(console.error)
   }
+
+
+
 
   render () {
     return (
