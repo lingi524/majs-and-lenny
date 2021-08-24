@@ -8,11 +8,15 @@ function LatestReads({bookBoxData}) {
         <div className="LatestReads">
             <h2>Our latest reads</h2>
             <div className="BookBoxContainer">
-                {/* add map function */}
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
+                {bookBoxData.map((book)=>(
+                    <BookBox 
+                    key={book.slug}
+                    title={book.title} 
+                    author={book.author}
+                    grade={book.grade}
+                    image={book.bookCover.url}
+                    />
+                ))}
             </div>
             <Button />
         </div>

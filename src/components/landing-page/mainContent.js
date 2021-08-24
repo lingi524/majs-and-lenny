@@ -3,12 +3,11 @@ import LatestReads from "./latestReads";
 import About from "./about";
 import OnTheTBR from "./onTheTBR";
 
-function MainContent(props) {
+function MainContent({bookBoxData}) {
 
     return (
         <div className="MainContent">
-            <LatestReads bookBoxData = {props}/>
-            {console.log(props)}
+            <LatestReads bookBoxData = {bookBoxData}/>
             <About />
             <OnTheTBR /> 
         </div>

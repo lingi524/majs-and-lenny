@@ -29,7 +29,17 @@ const query = `
       grade,
       slug,
       read,
-      currentlyReading
+      currentlyReading,
+      bookCover {
+        title
+        description
+        contentType
+        fileName
+        size
+        url
+        width
+        height
+      }
       
     }
   }
@@ -56,7 +66,6 @@ function App() {
     )
     .then(response => response.json())
     .then((json) => setData(json.data));   
-    console.log(data);
     }, [])
 
     if (!data) return <span>
