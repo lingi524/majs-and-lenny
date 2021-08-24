@@ -3,24 +3,21 @@ import BookBox from "../global-component/bookBox";
 
 
 
-function MainReadContent() {
+function MainReadContent({bookBoxData}) {
 
     return (
         <div className="MainReadContent">
             <h1>Our latest reads</h1>
             <div className="BookBoxContainer">
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
-            <BookBox />
+            {bookBoxData.map((book)=>(
+                    <BookBox 
+                    key={book.slug}
+                    title={book.title} 
+                    author={book.author}
+                    grade={book.grade}
+                    image={book.bookCover.url}
+                    />
+                ))}
             </div>
         </div>
     )

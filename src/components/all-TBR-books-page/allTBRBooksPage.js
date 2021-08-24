@@ -4,12 +4,12 @@ import Menu from "../global-component/menu";
 import MainTBRContent from "./mainTBRContent";
 
 
-function AllTBRBooksPage() {
+function AllTBRBooksPage({bookBoxData}) {
 
     return (
         <div className="AllTBRBooksPage">
             <Menu />
-            <MainTBRContent />
+            <MainTBRContent bookBoxData={bookBoxData}/>
             <Footer />
         </div>
     )

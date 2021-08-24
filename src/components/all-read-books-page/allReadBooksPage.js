@@ -4,12 +4,12 @@ import Menu from "../global-component/menu";
 import MainReadContent from "./mainReadContent";
 
 
-function AllReadBooksPage() {
+function AllReadBooksPage({bookBoxData}) {
 
     return (
         <div className="AllReadBooksPage">
             <Menu />
-            <MainReadContent />
+            <MainReadContent bookBoxData={bookBoxData}/>
             <Footer />
         </div>
     )

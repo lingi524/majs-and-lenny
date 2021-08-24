@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-import BookTemplate from "../images/bookTemplateHolder.jpeg"
 
 const character = String.fromCharCode(9733);
 var rating = "4.5";

@@ -45,7 +45,7 @@ const query = `
   }
 }
 `;
-// export default 
+
 function App() {
 
   let [data, setData] = useState(null);
@@ -72,22 +72,9 @@ function App() {
     <h1>Nothing to see</h1>
   </span>
     
-    const bookBoxData = data.booksCollection.items;
-
-// class App extends React.Component {
-
-//   componentDidMount () {
-//     client.getEntries ()
-//       .then((response) => {
-//         console.log(response);
-//       })
-//       .catch(console.error)
-//   }
+  const bookBoxData = data.booksCollection.items;
 
 
-
-
-  // render () {
     return (
       <Router>
             <div className="App">
@@ -98,11 +85,11 @@ function App() {
                 </Route>
 
                 <Route path="/allreadbooks">
-                  <AllReadBooksPage />
+                  <AllReadBooksPage bookBoxData={bookBoxData}/>
                 </Route>
 
                 <Route path="/alltbrbooks">
-                  <AllTBRBooksPage />
+                  <AllTBRBooksPage bookBoxData={bookBoxData} />
                 </Route>
 
                 <Route path="/reviewPage"> 
@@ -115,8 +102,5 @@ function App() {
           </Router>
         );
   }
-// }
-
-
 
 export default App;
