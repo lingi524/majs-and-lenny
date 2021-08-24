@@ -3,12 +3,13 @@ import Footer from "../global-component/footer";
 import Header from "./header";
 import MainContent from "./mainContent";
 
-function LandingPage() {
+function LandingPage(props) {
 
     return (
         <div className="LandingPage">
             <Header />
-            <MainContent />
+            <MainContent bookBoxData = {props}/>
+            {console.log(props)}
             <Footer />
         </div>
     )
