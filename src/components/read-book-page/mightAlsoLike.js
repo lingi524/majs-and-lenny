@@ -6,7 +6,6 @@ function MightAlsoLike({bookBoxData}) {
     const items = [];
     {
         for (var i = 0; i < 2; i++) {
-        // key=i;
         items.push(
         <BookBox 
         key={i}
