@@ -10,7 +10,7 @@ function Menu() {
             <Link to="/"> <p>HOME</p></Link>
             <Link to="/allreadbooks"> <p>READS</p> </Link>
             <Link to="/alltbrbooks"><p>TBR</p></Link>
-            <Link to="/"><p>ABOUT</p></Link>
+            <Link to="/#AboutSection"><p>ABOUT</p></Link>
         </div>
     )
 }

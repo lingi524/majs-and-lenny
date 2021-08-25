@@ -8,7 +8,7 @@ function MainContent({bookBoxData}) {
     return (
         <div className="MainContent">
             <LatestReads bookBoxData = {bookBoxData}/>
-            <About />
+            <About id="AboutSection" />
             <OnTheTBR bookBoxData={bookBoxData}/> 
         </div>
     )
