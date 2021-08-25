@@ -6,7 +6,6 @@ function OnTheTBR({bookBoxData}) {
     
 
     const undreadBooks = bookBoxData.filter(b => !b.read)
-    console.log(undreadBooks)
 
     return (
         <div className="OnTheTBR">

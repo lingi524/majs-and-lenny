@@ -4,7 +4,10 @@ import BookTemplate from "../images/bookTemplateHolder.jpeg"
 import BigLogo from "../images/Logo-grey.png"
 
 
-function Header() {
+function Header({bookBoxData}) {
+
+    const currentlyReading = bookBoxData.filter(b=>b.currentlyReading)
+
 
     return (
         <div className="Header">
@@ -22,7 +25,7 @@ function Header() {
 
                 <div className="BookContainer">
                     <div id="HeaderRectangle">
-                        <img className="HeaderBook" src={BookTemplate} alt="The book we're reading this month" />
+                        <img className="HeaderBook" src={currentlyReading[0].bookCover.url} alt="The book we're reading this month" />
                     </div>
                     <p>This months read</p>
                 </div>

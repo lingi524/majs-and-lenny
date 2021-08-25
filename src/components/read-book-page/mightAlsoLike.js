@@ -10,7 +10,7 @@ function MightAlsoLike({bookBoxData}) {
         <BookBox 
         key={i}
         title={bookBoxData[i].title} 
-        author={bookBoxData[i].auhtor}
+        author={bookBoxData[i].author}
         image = {bookBoxData[i].bookCover.url}
         grade={"1"}
         />

@@ -7,7 +7,7 @@ function LandingPage({bookBoxData}) {
 
     return (
         <div className="LandingPage">
-            <Header />
+            <Header bookBoxData = {bookBoxData}/>
             <MainContent bookBoxData = {bookBoxData}/>
             <Footer />
         </div>
