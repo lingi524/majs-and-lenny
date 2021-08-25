@@ -12,7 +12,7 @@ function BookBox(props) {
         <Link to="/reviewPage"> 
         <div className="BookBox">
             <div className="BookBoxRectangle">
-                <img className="BookBoxBookCover" src={props.image} alt="The book we're reading this month" />
+                <img className="BookBoxBookCover" src={props.image} alt="A book we're reading" />
                 <div className="BookBoxRectangleContainer">
                 <p className="BookTitle">{props.title}</p>
                 <p className="BookAuthor">{props.author}</p>

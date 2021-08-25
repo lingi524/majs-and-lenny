@@ -9,7 +9,7 @@ var reviewText = "Dr. Montague, an occult scholar, and his team--Theodora, his a
 
 
 
-function ReviewPage() {
+function ReviewPage({bookBoxData}) {
 
     return (
         <div className="ReviewPage">
@@ -39,7 +39,7 @@ function ReviewPage() {
             </div>
             </div>
             <Button />
-            <MightAlsoLike />
+            <MightAlsoLike bookBoxData={bookBoxData}/>
             <Footer />
         </div>
     )

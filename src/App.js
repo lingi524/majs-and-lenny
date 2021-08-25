@@ -69,7 +69,7 @@ function App() {
     }, [])
 
     if (!data) return <span>
-    <h1>Nothing to see</h1>
+    <h1>Loading</h1>
   </span>
     
   const bookBoxData = data.booksCollection.items;
@@ -94,7 +94,7 @@ function App() {
 
                 <Route path="/reviewPage"> 
                 {/* Add ":slug" in the path later to make the routing go to specifc page */}
-                  <ReviewPage />
+                  <ReviewPage bookBoxData={bookBoxData}/>
                 </Route>
                 <Route component={Error} />
               </Switch>
