@@ -2,24 +2,24 @@ import React from "react";
 import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
-import BookTemplate from "../images/bookTemplateHolder.jpeg"
 import MightAlsoLike from "./mightAlsoLike";
 
-var reviewText = "Dr. Montague, an occult scholar, and his team--Theodora, his assistant; Eleanor, a fragile young woman with a close acquaintance with the paranormal; and Luke, the future heir of Hill House--conduct an unusual research project in a reputedly haunted house. ";
 
 
 
 function ReviewPage({bookBoxData}) {
+
+    console.log(bookBoxData)
 
     return (
         <div className="ReviewPage">
             <Menu />
             <div className="ReviewPageContainer">
             <p className="BodyText">Review</p>
-            <h1>The Haunting of Hill House</h1>
-            <h2>Shirely Jackson</h2>
-            <img className="BookPageBook" src={BookTemplate} alt="The book we're reading this month" />
-            <p className="ReviewText">{reviewText}</p>
+            <h1>{bookBoxData[0].title}</h1>
+            <h2>{bookBoxData[0].author}</h2>
+            <img className="BookPageBook" src={bookBoxData[0].bookCover.url} alt="The book we're reading this month" />
+            <p className="ReviewText">{bookBoxData[0].description.json.content[0].content[0].value}</p>
             <div className="ReviewPageRectangle">
                 
                    <p className="BookInfo">

@@ -30,6 +30,14 @@ const query = `
       slug,
       read,
       currentlyReading,
+      authorsOrigin,
+      yearOfPublication,
+      numberOfPages,
+      genre,
+      whoDecidedToReadThis,
+      description{
+        json
+      }
       bookCover {
         title
         description
@@ -96,7 +104,9 @@ function App() {
                 {/* Add ":slug" in the path later to make the routing go to specifc page */}
                   <ReviewPage bookBoxData={bookBoxData}/>
                 </Route>
+
                 <Route component={Error} />
+                
               </Switch>
             </div>
           </Router>
