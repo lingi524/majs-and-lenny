@@ -30,11 +30,11 @@ function ReviewPage({bookBoxData}) {
                     <span>Who decided?</span>
                     </p>
                     <p className="BookInfoAnswers">
-                    <span>America</span>
-                    <span>1959</span>
-                    <span>246</span>
-                    <span>Gothic Horror</span>
-                    <span>Maja</span>
+                    <span>{bookBoxData[0].authorsOrigin}</span>
+                    <span>{bookBoxData[0].yearOfPublication}</span>
+                    <span>{bookBoxData[0].numberOfPages}</span>
+                    <span>{bookBoxData[0].genre}</span>
+                    <span>{bookBoxData[0].whoDecidedToReadThis}</span>
                     </p>
             </div>
             </div>
