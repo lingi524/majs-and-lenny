@@ -17,6 +17,7 @@ function MainTBRContent({bookBoxData}) {
                     title={book.title} 
                     author={book.author}
                     grade={book.grade}
+                    slug={book.slug}
                     image={book.bookCover.url}
                     />
                 ))}

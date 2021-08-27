@@ -10,16 +10,17 @@ import MightAlsoLike from "./mightAlsoLike";
 function ReviewPage({bookBoxData}) {
 
     console.log(bookBoxData)
-
+    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6))
+    
     return (
         <div className="ReviewPage">
             <Menu />
             <div className="ReviewPageContainer">
             <p className="BodyText">Review</p>
-            <h1>{bookBoxData[0].title}</h1>
-            <h2>{bookBoxData[0].author}</h2>
-            <img className="BookPageBook" src={bookBoxData[0].bookCover.url} alt="The book we're reading this month" />
-            <p className="ReviewText">{bookBoxData[0].description.json.content[0].content[0].value}</p>
+            <h1>{bookToDisplay.title}</h1>
+            <h2>{bookToDisplay.author}</h2>
+            <img className="BookPageBook" src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
+            <p className="ReviewText">{bookToDisplay.description.json.content[0].content[0].value}</p>
             <div className="ReviewPageRectangle">
                 
                    <p className="BookInfo">
@@ -30,11 +31,11 @@ function ReviewPage({bookBoxData}) {
                     <span>Who decided?</span>
                     </p>
                     <p className="BookInfoAnswers">
-                    <span>{bookBoxData[0].authorsOrigin}</span>
-                    <span>{bookBoxData[0].yearOfPublication}</span>
-                    <span>{bookBoxData[0].numberOfPages}</span>
-                    <span>{bookBoxData[0].genre}</span>
-                    <span>{bookBoxData[0].whoDecidedToReadThis}</span>
+                    <span>{bookToDisplay.authorsOrigin}</span>
+                    <span>{bookToDisplay.yearOfPublication}</span>
+                    <span>{bookToDisplay.numberOfPages}</span>
+                    <span>{bookToDisplay.genre}</span>
+                    <span>{bookToDisplay.whoDecidedToReadThis}</span>
                     </p>
             </div>
             </div>

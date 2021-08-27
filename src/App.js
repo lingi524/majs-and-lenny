@@ -100,7 +100,7 @@ function App() {
                   <AllTBRBooksPage bookBoxData={bookBoxData} />
                 </Route>
 
-                <Route path="/reviewPage"> 
+                <Route path="/book/:id"> 
                 {/* Add ":slug" in the path later to make the routing go to specifc page */}
                   <ReviewPage bookBoxData={bookBoxData}/>
                 </Route>

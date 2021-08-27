@@ -12,6 +12,7 @@ function MightAlsoLike({bookBoxData}) {
         title={bookBoxData[i].title} 
         author={bookBoxData[i].author}
         image = {bookBoxData[i].bookCover.url}
+        slug = {bookBoxData[i].slug}
         grade={"1"}
         />
       )}

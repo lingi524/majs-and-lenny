@@ -7,9 +7,8 @@ var rating = "4.5";
 
 
 function BookBox(props) {
-
     return (
-        <Link to="/reviewPage"> 
+        <Link to={`/book/${props.slug}`}> 
         <div className="BookBox">
             <div className="BookBoxRectangle">
                 <img className="BookBoxBookCover" src={props.image} alt="A book we're reading" />

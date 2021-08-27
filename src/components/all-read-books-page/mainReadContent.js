@@ -18,6 +18,7 @@ function MainReadContent({bookBoxData}) {
                     author={book.author}
                     grade={book.grade}
                     image={book.bookCover.url}
+                    slug={book.slug}
                     />
                 ))}
             </div>
