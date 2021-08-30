@@ -9,7 +9,6 @@ import MightAlsoLike from "./mightAlsoLike";
 
 function ReviewPage({bookBoxData}) {
 
-    console.log(bookBoxData)
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6))
     
     return (

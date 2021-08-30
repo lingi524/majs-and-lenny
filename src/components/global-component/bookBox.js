@@ -15,7 +15,7 @@ function BookBox(props) {
                 <div className="BookBoxRectangleContainer">
                 <p className="BookTitle">{props.title}</p>
                 <p className="BookAuthor">{props.author}</p>
-                <p className="Rating"><span className="Star">{character}</span>{rating}</p>
+                <p className="Rating"><span className="Star">{character}</span>{props.grade}</p>
                 </div>
             </div>
         </div>

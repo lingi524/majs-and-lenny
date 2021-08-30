@@ -20,7 +20,7 @@ function OnTheTBR({bookBoxData}) {
                         author={book.author}
                         image = {book.bookCover.url}
                         slug={book.slug}
-                        grade={"1"}
+                        grade={book.grade}
                         />
                         )
                    }

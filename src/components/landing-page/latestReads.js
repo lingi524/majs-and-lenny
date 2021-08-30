@@ -34,7 +34,7 @@ function LatestReads({bookBoxData}) {
                         author={b.author}
                         image = {b.bookCover.url}
                         slug={b.slug}
-                        grade={"1"}
+                        grade={b.grade}
                         />
                         )
                    }
