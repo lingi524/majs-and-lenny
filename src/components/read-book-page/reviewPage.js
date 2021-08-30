@@ -3,6 +3,7 @@ import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
 import MightAlsoLike from "./mightAlsoLike";
+import BookBox from "../global-component/bookBox";
 
 
 
@@ -39,7 +40,7 @@ function ReviewPage({bookBoxData}) {
             </div>
             </div>
             <Button />
-            <MightAlsoLike bookBoxData={bookBoxData}/>
+            <MightAlsoLike bookBoxData={bookBoxData} />
             <Footer />
         </div>
     )

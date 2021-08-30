@@ -100,9 +100,8 @@ function App() {
                   <AllTBRBooksPage bookBoxData={bookBoxData} />
                 </Route>
 
-                <Route path="/book/:id"> 
-                {/* Add ":slug" in the path later to make the routing go to specifc page */}
-                  <ReviewPage bookBoxData={bookBoxData}/>
+                <Route path="/book/:id" render={({match})=> <ReviewPage bookBoxData={bookBoxData} key={match.params.id  || ''} />}> 
+                  {/* <ReviewPage bookBoxData={bookBoxData}/> */}
                 </Route>
 
                 <Route component={Error} />

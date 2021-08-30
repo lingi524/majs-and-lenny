@@ -19,7 +19,6 @@ function MainTBRContent({bookBoxData}) {
                     grade={book.grade}
                     slug={book.slug}
                     image={book.bookCover.url}
-                    grade={book.grade}
                     />
                 ))}
             </div>

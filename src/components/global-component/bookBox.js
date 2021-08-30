@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 
 
 const character = String.fromCharCode(9733);
-var rating = "4.5";
 
 
 function BookBox(props) {
+
     return (
         <Link to={`/book/${props.slug}`}> 
         <div className="BookBox">
