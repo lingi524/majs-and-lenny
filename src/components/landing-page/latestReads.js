@@ -41,7 +41,7 @@ function LatestReads({bookBoxData}) {
                }
              )}
             </div>
-            <Button />
+            <Button buttonText="See all our latest reads" buttonLink="/allreadbooks"/>
         </div>
     )
 }

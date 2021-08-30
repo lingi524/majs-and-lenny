@@ -1,15 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
-var buttonText = "This is button text";
 
-function Button() {
+function Button(props) {
 
     return (
-        <Link to="/alltbrbooks"> 
+        <Link to={props.buttonLink}> 
         <div className="Button">
            <div className="ButtonRectangle"> 
            </div>
-            <button>{buttonText}</button>
+            <button>{props.buttonText}</button>
         </div>
         </Link>
     )

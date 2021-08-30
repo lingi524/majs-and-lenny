@@ -27,7 +27,7 @@ function OnTheTBR({bookBoxData}) {
                }
              )}
             </div>
-            <Button />
+            <Button buttonText="See all our TBRs" buttonLink="/alltbrbooks"/>
         </div>
     )
 }

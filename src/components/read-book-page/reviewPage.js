@@ -39,7 +39,7 @@ function ReviewPage({bookBoxData}) {
                     </p>
             </div>
             </div>
-            <Button />
+            <Button buttonText="Back to all books" buttonLink="/alltbrbooks"/>
             <MightAlsoLike bookBoxData={bookBoxData} />
             <Footer />
         </div>
