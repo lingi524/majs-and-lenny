@@ -82,6 +82,16 @@ button {
   font-size: 16px;
   line-height: 22px;
   margin: 5px 0 5px 0;
+  display: inline-block;
+  max-height: 50px;
+  max-width: 120px;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Rating {
@@ -207,6 +217,7 @@ button {
   border-radius: 15px;
   margin: 50px 0 50px 0;
   position: relative;
+  text-overflow: ellipsis;
 }
 .BookBoxRectangleContainer {
   display: flex;
