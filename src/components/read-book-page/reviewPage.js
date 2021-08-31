@@ -10,8 +10,21 @@ import BookBox from "../global-component/bookBox";
 
 function ReviewPage({bookBoxData}) {
 
-    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6))
+    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
+    const isRead = bookToDisplay.read;
+    console.log(bookBoxData);
+    console.log(isRead);
     
+    let buttonLinkVar, buttonTextVar;
+    // if (isRead) {
+    //    buttonTextVar="Back to all read books"; 
+    //     buttonLinkVar="/allreadbooks";
+    //   } else
+    //     buttonTextVar="Back to all TBR books"; 
+    //     buttonLinkVar="/alltbrbooks";
+    // }
+   
+
     return (
         <div className="ReviewPage">
             <Menu />
@@ -39,7 +52,9 @@ function ReviewPage({bookBoxData}) {
                     </p>
             </div>
             </div>
-            <Button buttonText="Back to all books" buttonLink="/alltbrbooks"/>
+
+            <Button buttonText={isRead? "Back to all read books" : "Back to all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
+            
             <MightAlsoLike bookBoxData={bookBoxData} />
             <Footer />
         </div>
