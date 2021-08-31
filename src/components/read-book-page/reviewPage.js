@@ -13,7 +13,7 @@ function ReviewPage({bookBoxData}) {
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
     const isRead = bookToDisplay.read;
     console.log(bookBoxData);
-    console.log(isRead);
+
     
     let buttonLinkVar, buttonTextVar;
     // if (isRead) {
