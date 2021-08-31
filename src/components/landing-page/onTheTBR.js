@@ -21,8 +21,9 @@ function OnTheTBR({bookBoxData}) {
                         image = {book.bookCover.url}
                         slug={book.slug}
                         grade={book.grade}
+                        read={book.read}
                         />
-                        )
+                        ) 
                    }
                }
              )}

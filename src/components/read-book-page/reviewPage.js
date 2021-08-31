@@ -3,26 +3,16 @@ import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
 import MightAlsoLike from "./mightAlsoLike";
-import BookBox from "../global-component/bookBox";
+
 
 
 
 
 function ReviewPage({bookBoxData}) {
 
+    const character = String.fromCharCode(9733);
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
     const isRead = bookToDisplay.read;
-
-    
-    let buttonLinkVar, buttonTextVar;
-    // if (isRead) {
-    //    buttonTextVar="Back to all read books"; 
-    //     buttonLinkVar="/allreadbooks";
-    //   } else
-    //     buttonTextVar="Back to all TBR books"; 
-    //     buttonLinkVar="/alltbrbooks";
-    // }
-   
 
     return (
         <div className="ReviewPage">
@@ -31,6 +21,7 @@ function ReviewPage({bookBoxData}) {
             <p className="BodyText">Review</p>
             <h1>{bookToDisplay.title}</h1>
             <h2>{bookToDisplay.author}</h2>
+            <p className= {isRead? "RatingPage" : "hidden" } ><span className="Star">{character}</span>{bookToDisplay.grade}</p>
             <img className="BookPageBook" src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <p className="ReviewText">{bookToDisplay.description.json.content[0].content[0].value}</p>
             <div className="ReviewPageRectangle">

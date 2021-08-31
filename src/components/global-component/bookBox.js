@@ -6,6 +6,7 @@ const character = String.fromCharCode(9733);
 
 
 function BookBox(props) {
+    const isRead = props.read;
 
     return (
         <Link to={`/book/${props.slug}`}> 
@@ -15,7 +16,7 @@ function BookBox(props) {
                 <div className="BookBoxRectangleContainer">
                 <p className="BookTitle">{props.title}</p>
                 <p className="BookAuthor">{props.author}</p>
-                <p className="Rating"><span className="Star">{character}</span>{props.grade}</p>
+                <p className= {isRead? "Rating" : "hidden" } ><span className="Star">{character}</span>{props.grade}</p>
                 </div>
             </div>
         </div>

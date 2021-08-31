@@ -17,6 +17,10 @@ a:hover {
   color: white;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 h1 {
   font-family: ivypresto-display, serif;
   font-style: normal;
@@ -101,6 +105,15 @@ button {
   font-size: 12px;
   line-height: 22px;
   margin: 3px 0 5px 0;
+}
+
+.RatingPage {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  color: #433b3b;
+  margin: 0 0 20px 0;
 }
 
 .Star {
