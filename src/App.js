@@ -80,7 +80,7 @@ function App() {
   </span>
     
   const bookBoxData = data.booksCollection.items;
-
+  console.log(data);
 
     return (
       <Router>

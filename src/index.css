@@ -410,10 +410,47 @@ button {
     background-color: rgb(255, 255, 155);
   }
 
+  h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 80px 0 80px 60px;
+  }
+
   .HeaderContainer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+
+  .LogoContainer p {
+    font-size: 15px;
+  }
+
+  .BookContainer {
+    margin-left: 30px;
+  }
+
+  .LogoContainer {
+    margin-right: 30px;
+  }
+
+  .BookBoxContainer {
+    align-content: flex-start;
+  }
+  .BookBoxBookCover {
+    width: 158px;
+    height: 243px;
+  }
+
+  .BookBoxRectangle {
+    width: 199px;
+    height: 252px;
+  }
+
+  .BookTitle {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

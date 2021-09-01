@@ -4,7 +4,22 @@ import Button from "../global-component/button";
 
 function LatestReads({bookBoxData}) {
 
-    const readBooks = bookBoxData.filter(b => b.read)
+    const readBooks = bookBoxData.filter(b => b.read);
+
+    // (window).resize(function() {
+    //     var width = (window).width();
+    //     var bookAmount;
+    
+    //     if (width <600 && width>768) {
+    //         bookAmount = 3;
+    //     } else if (width <= 599) {
+    //         bookAmount = 4;
+    //     } else {
+    //         bookAmount = 4;
+    //     }
+    
+    // });
+  
 
     // const items = [];
     // {
