@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #433b3b;
 }
 
@@ -147,6 +147,11 @@ button {
   text-align: center;
 }
 
+.Menu a {
+  border-bottom: 1px solid #433b3b;
+  padding-bottom: 2px;
+  color: #433b3b;
+}
 .Header {
   background-color: #ecc643;
   font-family: ivypresto-display, serif;
@@ -447,7 +452,7 @@ button {
   }
 
   .BodyText {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 34px;
     text-align: justify;
     margin: 50px 140px 50px 140px;
