@@ -421,6 +421,15 @@ button {
     margin: 60px 0 60px 60px;
   }
 
+  button {
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .ButtonRectangle {
+    width: 250px;
+  }
+
   .HeaderContainer {
     flex-direction: row;
     align-items: center;
