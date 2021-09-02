@@ -5,23 +5,6 @@ import Button from "../global-component/button";
 function LatestReads({bookBoxData}) {
 
     const readBooks = bookBoxData.filter(b => b.read);
-    var bookAmount;
-
-    function windowSize() {
-        var width = window.innerWidth;
-    
-        if (width >600) {
-            bookAmount = 3;
-        } else if (width <599) {
-            bookAmount = 4;
-        } else {
-            bookAmount = 4;
-        }
-            console.log(width)
-            console.log(bookAmount)
-        };
-            
-        window.addEventListener('resize', windowSize);
   
 
     return (
@@ -30,7 +13,7 @@ function LatestReads({bookBoxData}) {
             <div className="BookBoxContainer">
                 {}
             {readBooks.map((b, index) => {
-                   if (index < {bookAmount}) {
+                   if (index < 4) {
                        return (
                         <BookBox 
                         key={index}
