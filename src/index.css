@@ -57,6 +57,10 @@ h2 {
   margin: 0 0 40px 0;
 }
 
+.Button2 {
+  position: absolute;
+}
+
 .ButtonRectangle {
   background-color: #9e8d8d;
   width: 180px;
@@ -74,7 +78,6 @@ button {
   line-height: 20px;
   background-color: #ecc643;
   border: none;
-  position: absolute;
   width: 180px;
   margin: 0 0px 10px 0;
 }
@@ -561,7 +564,92 @@ button {
 @media only screen and (min-width: 769px) {
   /* For desktop: */
   /* Set a max width for this later, to make it center on really large screens*/
+
   body {
-    background-color: rgb(255, 184, 184);
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20%;
+  }
+
+  button {
+    width: 268.26px;
+    height: 48.4px;
+    font-size: 20px;
+  }
+
+  .ButtonRectangle {
+    width: 268.26px;
+    height: 48.4px;
+  }
+
+  .HeaderContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+  }
+
+  .HeaderBook {
+    width: 329px;
+    height: 460px;
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 0.5px solid #a5a5a5;
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  #HeaderRectangle {
+    width: 301px;
+    height: 444px;
+    background: #fffef8;
+    z-index: 1;
+    position: relative;
+    margin: 10px 0 10px 0;
+  }
+  .BigLogo {
+    width: 381px;
+    height: 265px;
+  }
+  .LogoContainer p {
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  .BookContainer {
+    margin-left: 60px;
+  }
+
+  .BookContainer p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .LogoContainer {
+    margin-right: 60px;
+  }
+
+  .BookBoxBookCover {
+    width: 158px;
+    height: 243px;
+  }
+
+  .BookBoxRectangle {
+    width: 199px;
+    height: 252px;
+  }
+
+  .MainReadContent {
+    margin: 0 15% 0 15%;
   }
 }
