@@ -12,6 +12,7 @@ function ReviewPage({bookBoxData}) {
 
     const character = String.fromCharCode(9733);
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
+    const textToDisplay = bookToDisplay.description.json.content.map((textArray)=>(textArray.content[0].value));
     const isRead = bookToDisplay.read;
 
     return (
@@ -23,7 +24,7 @@ function ReviewPage({bookBoxData}) {
             <h2>{bookToDisplay.author}</h2>
             <p className= {isRead? "RatingPage" : "hidden" } ><span className="Star">{character}</span>{bookToDisplay.grade}</p>
             <img className="BookPageBook" src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
-            <p className="ReviewText">{bookToDisplay.description.json.content[0].content[0].value}</p>
+            <p className="ReviewText">{textToDisplay}</p>
             <div className="ReviewPageRectangle">
                 
                    <p className="BookInfo">
