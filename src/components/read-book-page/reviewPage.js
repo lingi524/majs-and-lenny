@@ -41,6 +41,7 @@ function ReviewPage({bookBoxData}) {
                     <span>{bookToDisplay.genre}</span>
                     <span>{bookToDisplay.whoDecidedToReadThis}</span>
                     </p>
+                    
             </div>
             </div>
 

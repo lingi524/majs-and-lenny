@@ -21,6 +21,10 @@ a:hover {
   visibility: hidden;
 }
 
+.none {
+  display: none;
+}
+
 h1 {
   font-family: ivypresto-display, serif;
   font-style: normal;
@@ -80,6 +84,13 @@ button {
   border: none;
   width: 180px;
   margin: 0 0px 10px 0;
+}
+
+.Menu-Text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 .BookTitle {
@@ -263,6 +274,12 @@ button {
 /*End of latest reads styling*/
 
 /*About section styling*/
+
+.About-Container {
+  background-color: #fbf7e9;
+  padding-top: 20px;
+}
+
 .About {
   background-color: #fbf7e9;
   display: flex;
@@ -270,6 +287,10 @@ button {
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.About h1 {
+  order: -1;
 }
 
 .AboutRectangle {
@@ -429,6 +450,13 @@ button {
     width: 250px;
   }
 
+  .Menu-Text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45vw;
+  }
+
   .ButtonRectangle {
     width: 250px;
   }
@@ -567,11 +595,18 @@ button {
 
   body {
     max-width: 1500px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;
+    margin: 0px auto; */
+  }
+
+  .Menu-Text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
   }
 
   h2 {
@@ -651,5 +686,25 @@ button {
 
   .MainReadContent {
     margin: 0 15% 0 15%;
+  }
+
+  .About {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .About h1 {
+    text-align: left;
+    margin: 0 0 0 25px;
+  }
+
+  .About .BodyText {
+    width: 30vw;
+    margin-top: 10px;
+  }
+
+  .AboutHeadingDesktop {
+    text-align: left;
+    margin-left: 25px;
   }
 }
