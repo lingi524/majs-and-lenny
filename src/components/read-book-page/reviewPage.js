@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
 import MightAlsoLike from "./mightAlsoLike";
 
-
+function useWindowSize () {
+    const [size, setSize] = useState(window.innerWidth);
+    useEffect(()=> {
+        const handleResize = () => {
+            setSize(window.innerWidth);
+        }
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
+    return size; 
+}
 
 
 
 function ReviewPage({bookBoxData}) {
+
+    const width = useWindowSize();
+    const desktopSize = 769;
 
     const character = String.fromCharCode(9733);
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
@@ -16,14 +31,17 @@ function ReviewPage({bookBoxData}) {
     const isRead = bookToDisplay.read;
 
     return (
+        
         <div className="ReviewPage">
             <Menu />
+            <div className="ReviewPageContainerDesktop">
+            <img className={width<desktopSize ? "none" : "BookPageBook"}a src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <div className="ReviewPageContainer">
             <p className="BodyText">Review</p>
             <h1>{bookToDisplay.title}</h1>
             <h2>{bookToDisplay.author}</h2>
             <p className= {isRead? "RatingPage" : "hidden" } ><span className="Star">{character}</span>{bookToDisplay.grade}</p>
-            <img className="BookPageBook" src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
+            <img className={width>desktopSize ? "none" : "BookPageBook"}a src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <p className="ReviewText">{textToDisplay}</p>
             <div className="ReviewPageRectangle">
                 
@@ -44,6 +62,8 @@ function ReviewPage({bookBoxData}) {
                     
             </div>
             </div>
+            </div>
+
 
             <Button buttonText={isRead? "Back to all read books" : "Back to all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
             

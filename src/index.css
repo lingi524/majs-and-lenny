@@ -6,6 +6,7 @@
 body {
   background-color: #fffef8;
   color: #433b3b;
+  margin: auto;
 }
 
 a {
@@ -602,6 +603,10 @@ button {
     margin: 0px auto; */
   }
 
+  .Menu {
+    padding: 40px;
+  }
+
   .Menu-Text {
     display: flex;
     flex-direction: row;
@@ -716,5 +721,43 @@ button {
   .AboutHeadingDesktop {
     text-align: left;
     margin-left: 25px;
+  }
+
+  .ReviewPageContainer {
+    align-items: flex-start;
+  }
+
+  .ReviewPageContainer h1 {
+    margin: 0 0 0 30px;
+  }
+  .ReviewPageContainer h2 {
+    margin: 0 0 0 30px;
+  }
+  .ReviewPageContainer .BodyText {
+    margin-left: 30px;
+  }
+
+  .RatingPage {
+    margin-left: 30px;
+  }
+
+  .ReviewPageContainerDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .ReviewPageContainerDesktop img {
+    width: 367px;
+    height: 528px;
+  }
+
+  .ReviewPageRectangle {
+    margin-left: 30px;
   }
 }
