@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
-import MightAlsoLike from "./mightAlsoLike";
+// import MightAlsoLike from "./mightAlsoLike";
 
 function useWindowSize () {
     const [size, setSize] = useState(window.innerWidth);

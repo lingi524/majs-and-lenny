@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "../global-component/menu";
-import BookTemplate from "../images/bookTemplateHolder.jpeg"
+// import BookTemplate from "../images/bookTemplateHolder.jpeg"
 import BigLogo from "../images/Logo-grey.png"
 
 

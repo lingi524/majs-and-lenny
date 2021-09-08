@@ -24,7 +24,9 @@ function OnTheTBR({bookBoxData}) {
                         read={book.read}
                         />
                         ) 
-                   }
+                   } else {
+                    return ([])
+                }
                }
              )}
             </div>

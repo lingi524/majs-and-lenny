@@ -25,7 +25,9 @@ function LatestReads({bookBoxData}) {
                         read={b.read}
                         />
                         )
-                   }
+                   } else {
+                    return ([])
+                }
                }
              )}
             </div>

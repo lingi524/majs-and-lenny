@@ -5,10 +5,6 @@ import BookBox from "../global-component/bookBox";
 
 function MightAlsoLike({bookBoxData}) {
 
-    function activateLasers () {
-        console.log("tja from might also like")
-    }
-
     function refreshPage(){
         window.location.reload();
     }
@@ -33,6 +29,8 @@ function MightAlsoLike({bookBoxData}) {
                         onClick={refreshPage}
                         />
                         )
+                   } else {
+                       return ([])
                    }
                }
              )}                

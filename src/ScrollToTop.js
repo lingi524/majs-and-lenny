@@ -9,7 +9,8 @@ function ScrollToTop({ history }) {
     return () => {
       unlisten();
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  //Warning about dependancy of history to react hook removed
 
   return (null);
 }

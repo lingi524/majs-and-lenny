@@ -1,7 +1,7 @@
 import React from "react";
 // import LogoSmall from "../images/Logo-grey-small.png";
 import {Link} from "react-router-dom";
-import { HashLink as HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 
 function Menu() {
