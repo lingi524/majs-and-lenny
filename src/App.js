@@ -6,6 +6,7 @@ import ReviewPage from './components/read-book-page/reviewPage';
 import Error from './components/global-component/error';
 import CONFIG from './config';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -59,12 +60,12 @@ function App() {
   useEffect(() => {
     window
     .fetch(
-    `https://graphql.contentful.com/content/v1/spaces/${CONFIG.SPACE_ID}`,
+    `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_SPACE_ID}`,
     {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${CONFIG.MY_API_TOKEN}`,
+        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
 
     },
     body: JSON.stringify({ query }),
@@ -79,7 +80,6 @@ function App() {
   </span>
     
   const bookBoxData = data.booksCollection.items;
-  console.log(data);
 
     return (
       <Router>
