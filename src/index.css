@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: rgb(129, 129, 129);
 }
 
 .hidden {
@@ -82,6 +82,7 @@ button {
   font-size: 15px;
   line-height: 20px;
   background-color: #ecc643;
+  /* background-color: #dcf6fd; */
   border: none;
   width: 180px;
   margin: 0 0px 10px 0;
@@ -147,6 +148,7 @@ button {
 
 .Menu {
   background-color: #ecc643;
+  /* background-color: #e4dcfd; */
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -169,6 +171,7 @@ button {
 }
 .Header {
   background-color: #ecc643;
+  /* background-color: #e4dcfd; */
   font-family: ivypresto-display, serif;
   font-weight: 300;
   font-style: normal;
@@ -246,7 +249,8 @@ button {
 .BookBoxRectangle {
   width: 130px;
   height: 156px;
-  background: #f7eed1;
+  /* background: #f7eed1; */
+  background: #fdf4dc;
   border-radius: 15px;
   margin: 50px 0 50px 0;
   position: relative;
@@ -278,11 +282,13 @@ button {
 
 .About-Container {
   background-color: #fbf7e9;
+  /* background-color: #fdf4dc; */
   padding-top: 20px;
 }
 
 .About {
   background-color: #fbf7e9;
+  /* background-color: #fdf4dc; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +324,9 @@ button {
   font-size: 10px;
   line-height: 16px;
   text-align: center;
-  background-color: #ecc643;
+  /* background-color: #ecc643; */
+  background-color: #fbf7e9;
+  /* background-color: #e4dcfd; */
   width: 100%;
   padding: 50px 0 50px 0;
 }
@@ -618,6 +626,7 @@ button {
     font-size: 25px;
     text-align: left;
     margin-left: 20%;
+    margin-top: 60px;
   }
 
   button {
@@ -635,7 +644,7 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 60px;
+    margin: 30px;
   }
 
   .HeaderBook {
@@ -673,6 +682,7 @@ button {
   .BookContainer p {
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .LogoContainer {
@@ -731,14 +741,15 @@ button {
     margin: 0 0 0 30px;
   }
   .ReviewPageContainer h2 {
-    margin: 0 0 0 30px;
+    margin: 10px 0 10px 30px;
   }
   .ReviewPageContainer .BodyText {
-    margin-left: 30px;
+    margin: 10px 0 15px 30px;
   }
 
   .RatingPage {
-    margin-left: 30px;
+    font-size: 25px;
+    margin: 0 0 0 30px;
   }
 
   .ReviewPageContainerDesktop {
@@ -748,8 +759,8 @@ button {
     align-items: center;
     width: 60vw;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
 
   .ReviewPageContainerDesktop img {
@@ -759,5 +770,16 @@ button {
 
   .ReviewPageRectangle {
     margin-left: 30px;
+    width: 400px;
+  }
+
+  .ReviewText {
+    margin: 10px 0 0 30px;
+    max-width: 500px;
+  }
+
+  .Footer {
+    font-size: 15px;
+    line-height: 25px;
   }
 }

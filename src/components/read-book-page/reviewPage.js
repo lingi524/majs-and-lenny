@@ -35,13 +35,13 @@ function ReviewPage({bookBoxData}) {
         <div className="ReviewPage">
             <Menu />
             <div className="ReviewPageContainerDesktop">
-            <img className={width<desktopSize ? "none" : "BookPageBook"}a src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
+            <img className={width<desktopSize ? "none" : "BookPageBook"} src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <div className="ReviewPageContainer">
             <p className="BodyText">Review</p>
             <h1>{bookToDisplay.title}</h1>
             <h2>{bookToDisplay.author}</h2>
             <p className= {isRead? "RatingPage" : "hidden" } ><span className="Star">{character}</span>{bookToDisplay.grade}</p>
-            <img className={width>desktopSize ? "none" : "BookPageBook"}a src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
+            <img className={width>desktopSize ? "none" : "BookPageBook"} src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <p className="ReviewText">{textToDisplay}</p>
             <div className="ReviewPageRectangle">
                 
@@ -67,7 +67,7 @@ function ReviewPage({bookBoxData}) {
 
             <Button buttonText={isRead? "Back to all read books" : "Back to all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
             
-            <MightAlsoLike bookBoxData={bookBoxData} />
+            {/* <MightAlsoLike bookBoxData={bookBoxData} /> */}
             <Footer />
         </div>
     )
