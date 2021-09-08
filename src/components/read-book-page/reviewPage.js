@@ -37,7 +37,7 @@ function ReviewPage({bookBoxData}) {
             <div className="ReviewPageContainerDesktop">
             <img className={width<desktopSize ? "none" : "BookPageBook"} src={bookToDisplay.bookCover.url} alt="The book we're reading this month" />
             <div className="ReviewPageContainer">
-            <p className="BodyText">Review</p>
+            <p className="BodyText">{isRead? "Review" : "To be read" }</p>
             <h1>{bookToDisplay.title}</h1>
             <h2>{bookToDisplay.author}</h2>
             <p className= {isRead? "RatingPage" : "hidden" } ><span className="Star">{character}</span>{bookToDisplay.grade}</p>
