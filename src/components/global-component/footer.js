@@ -7,7 +7,7 @@ function Footer() {
             <p><span id="boldFooter">Made by <a href="https://github.com/lingi524">Linnéa</a> with love</span><br />
                 Coded with React<br />
                 Powered on Contentful<br />
-                (Soon to be) Deployed on Netlify
+                Deployed on Netlify
             </p>
         </div>
     )
