@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import ScrollToTop from "../../ScrollToTop";
 
 
 const character = String.fromCharCode(9733);
@@ -9,6 +10,8 @@ function BookBox(props) {
     const isRead = props.read;
 
     return (
+    <> 
+        <ScrollToTop />
         <Link to={`/book/${props.slug}`}> 
         <div className="BookBox">
             <div className="BookBoxRectangle">
@@ -21,6 +24,7 @@ function BookBox(props) {
             </div>
         </div>
         </Link>
+    </>
     )
 }
 
