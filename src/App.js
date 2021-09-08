@@ -4,7 +4,6 @@ import LandingPage from './components/landing-page/landingPage';
 import AllTBRBooksPage from './components/all-TBR-books-page/allTBRBooksPage';
 import ReviewPage from './components/read-book-page/reviewPage';
 import Error from './components/global-component/error';
-import CONFIG from './config';
 
 
 import {
