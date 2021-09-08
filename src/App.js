@@ -16,7 +16,6 @@ import {
 } from "react-router-dom";
 import React from 'react';
 import {useState, useEffect} from "react";
-// import { client } from './client';
 
 
 const query = `

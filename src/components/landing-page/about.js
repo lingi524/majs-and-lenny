@@ -24,7 +24,7 @@ function About() {
     const desktopSize = 769;
 
     return (
-        <div className="About-Container">
+        <div className="About-Container" id="AboutSection">
             
          
         <div className="About">
