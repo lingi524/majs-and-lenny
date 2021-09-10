@@ -65,7 +65,7 @@ function ReviewPage({bookBoxData}) {
             </div>
 
 
-            <Button buttonText={isRead? "Back to all read books" : "Back to all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
+            <Button buttonText={isRead? "View all read books" : "View all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
             
             {/* <MightAlsoLike bookBoxData={bookBoxData} /> */}
             <Footer />
