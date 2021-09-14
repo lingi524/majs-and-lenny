@@ -88,7 +88,7 @@ function App() {
 
     if (!data) return <span>
     <div className="Loading">
-    <img src={loadingImg} />
+    <img src={loadingImg} alt="An orange ball jumping up and down" />
       <h1>Loading</h1>
     </div>
   </span>
