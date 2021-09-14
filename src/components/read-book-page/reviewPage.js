@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../global-component/button";
 import Footer from "../global-component/footer";
 import Menu from "../global-component/menu";
-// import MightAlsoLike from "./mightAlsoLike";
+import MightAlsoLike from "./mightAlsoLike";
 
 function useWindowSize () {
     const [size, setSize] = useState(window.innerWidth);
@@ -20,6 +20,7 @@ function useWindowSize () {
 
 
 
+
 function ReviewPage({bookBoxData}) {
 
     const width = useWindowSize();
@@ -29,6 +30,18 @@ function ReviewPage({bookBoxData}) {
     const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
     const textToDisplay = bookToDisplay.description.json.content.map((textArray)=>(textArray.content[0].value));
     const isRead = bookToDisplay.read;
+    const recommendedBooks = bookToDisplay.youMightAlsoLikeCollection.items;
+
+
+    function showMightLike () {
+        if (recommendedBooks.length === 0) {
+            return <div></div>
+
+        } else if (isRead){
+            return <MightAlsoLike bookBoxData={bookBoxData} />;
+        } 
+
+    }
 
     return (
         
@@ -66,8 +79,8 @@ function ReviewPage({bookBoxData}) {
 
 
             <Button buttonText={isRead? "View all read books" : "View all TBR books"} buttonLink= {isRead? "/allreadbooks" : "/alltbrbooks"} />
-            
-            {/* <MightAlsoLike bookBoxData={bookBoxData} /> */}
+            {/* <MightAlsoLike className={isRead ? " " : "None"} bookBoxData={bookBoxData} /> */}
+            {showMightLike()}
             <Footer />
         </div>
     )

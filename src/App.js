@@ -46,12 +46,16 @@ const query = `
         width
         height
       }
-      youMightAlsoLikeCollection {
+      youMightAlsoLikeCollection (limit: 20) {
         items {
          ...on Books {
           title,
           author,
-          grade
+          grade,
+          slug,
+          bookCover {
+            url
+          }
         }
        }
       }
@@ -84,11 +88,11 @@ function App() {
     if (!data) return <span>
     <h1>Loading</h1>
   </span>
+
   console.log(data)
 
     
   const bookBoxData = data.booksCollection.items;
-  console.log (bookBoxData.mightAlsoLikeCollection);
 
     return (
       <Router>

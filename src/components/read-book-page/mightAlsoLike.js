@@ -9,6 +9,10 @@ function MightAlsoLike({bookBoxData}) {
         window.location.reload();
     }
 
+    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
+    console.log(bookToDisplay)
+    const recommendedBooks = bookToDisplay.youMightAlsoLikeCollection.items;
+    console.log(recommendedBooks)
 
 
     return (
@@ -16,7 +20,7 @@ function MightAlsoLike({bookBoxData}) {
             <h2>You might also like these books</h2>
             <div className="BookBoxContainer">
           
-            {bookBoxData.map((b, index) => {
+            {recommendedBooks.map((b, index) => {
                    if (index < 2) {
                        return (
                         <BookBox 
