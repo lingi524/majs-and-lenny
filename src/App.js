@@ -46,7 +46,15 @@ const query = `
         width
         height
       }
-      
+      youMightAlsoLikeCollection {
+        items {
+         ...on Books {
+          title,
+          author,
+          grade
+        }
+       }
+      }
     }
   }
 }
@@ -80,6 +88,7 @@ function App() {
 
     
   const bookBoxData = data.booksCollection.items;
+  console.log (bookBoxData.mightAlsoLikeCollection);
 
     return (
       <Router>
