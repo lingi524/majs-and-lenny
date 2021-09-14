@@ -55,7 +55,6 @@ const query = `
 function App() {
 
   let [data, setData] = useState(null);
-
   useEffect(() => {
     window
     .fetch(
@@ -77,6 +76,8 @@ function App() {
     if (!data) return <span>
     <h1>Loading</h1>
   </span>
+  console.log(data)
+
     
   const bookBoxData = data.booksCollection.items;
 

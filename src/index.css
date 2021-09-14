@@ -18,6 +18,10 @@ a:hover {
   color: rgb(129, 129, 129);
 }
 
+.NavIndex {
+  z-index: 3;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -199,7 +203,7 @@ button {
 .HeaderBook {
   width: 183.6px;
   height: 263.51px;
-  z-index: 2;
+  /* z-index: 2; */
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -218,6 +222,7 @@ button {
 
 .BookContainer {
   font-family: Avenir;
+  z-index: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -268,7 +273,7 @@ button {
 .BookBoxBookCover {
   width: 98px;
   height: 151px;
-  z-index: 2;
+  /* z-index: 2; */
   /* margin-top: -100px; */
   position: absolute;
   bottom: 100px;
