@@ -320,6 +320,14 @@ button {
   margin-bottom: 30px;
 }
 
+.Loading {
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Footer styling*/
 
 .Footer {
