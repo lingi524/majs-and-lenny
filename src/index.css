@@ -330,9 +330,12 @@ button {
   line-height: 16px;
   text-align: center;
   /* background-color: #ecc643; */
-  background-color: #fbf7e9;
+  /* background-color: #fbf7e9; */
   /* background-color: #e4dcfd; */
+  background-color: #9d8d8c;
+  color: #fdf4dc;
   width: 100%;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   padding: 50px 0 50px 0;
 }
 
@@ -421,7 +424,7 @@ button {
 
 .MightAlsoLike {
   background-color: #fbf7e9;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .MightAlsoLike h2 {

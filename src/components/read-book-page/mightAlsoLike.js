@@ -5,15 +5,12 @@ import BookBox from "../global-component/bookBox";
 
 function MightAlsoLike({bookBoxData}) {
 
+    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
+    const recommendedBooks = bookToDisplay.youMightAlsoLikeCollection.items;
+
     function refreshPage(){
         window.location.reload();
     }
-
-    const bookToDisplay = bookBoxData.find(({slug})=>slug===window.location.pathname.substring(6));
-    console.log(bookToDisplay)
-    const recommendedBooks = bookToDisplay.youMightAlsoLikeCollection.items;
-    console.log(recommendedBooks)
-
 
     return (
         <div className="MightAlsoLike">
